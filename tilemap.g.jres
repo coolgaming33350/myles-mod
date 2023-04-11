@@ -28,6 +28,12 @@
         "tilemapTile": true,
         "displayName": "Bridge"
     },
+    "tile5": {
+        "data": "hwQQABAAAADd3R3d3d3d3d3d3d3d3dHdHR3d3d3d3d3d3d3d3d3d3d3d3dHdHd3d3d3d3dHd3d0d3d3d3d3d3d3d3d3d3d3d3R3d3dHd0d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3R3d3d3d0d3d3d3d3d3d3d3d3d0d3d3d3d3d3d3Q==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "Snow"
+    },
     "level1": {
         "id": "level1",
         "mimeType": "application/mkcd-tilemap",
