@@ -4,6 +4,11 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Tank"
     },
+    "image2": {
+        "data": "hwQGAAUAAABVVQUA//8PAP//DwD//w8A//8PAP//DwA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Tank Bullet"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
