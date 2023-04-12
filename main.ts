@@ -1,3 +1,13 @@
+namespace SpriteKind {
+    export const Vehicle = SpriteKind.create()
+}
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Vehicle, function (sprite, otherSprite) {
+    game.showLongText("PLANE INCOMING", DialogLayout.Bottom)
+    sprites.destroy(mySprite)
+    mySprite = sprites.create(assets.image`Bomber plane`, SpriteKind.Player)
+    controller.moveSprite(mySprite)
+    scene.cameraFollowSprite(mySprite)
+})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(assets.image`Tank Bullet`, mySprite, 50, 0)
 })
@@ -22,6 +32,26 @@ controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
 statusbar = statusbars.create(20, 4, StatusBarKind.Health)
 statusbar.attachToSprite(mySprite)
-game.onUpdateInterval(2000, function () {
-    statusbar.value += 5
+mySprite.setPosition(0, 0)
+let Plane = sprites.create(img`
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+    `, SpriteKind.Vehicle)
+Plane.setPosition(24, 100)
+game.onUpdateInterval(2500, function () {
+    statusbar.value += 2.5
 })

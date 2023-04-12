@@ -9,6 +9,11 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Tank Bullet"
     },
+    "image3": {
+        "data": "hwQQABAAAAAAAMzBwcEAAAAAwMHBwQwAAAAAERHB/AAAAADAzMwMAAAAAADMzAwAAAAAAMzMDAAAAACAzMwMAAAAAIjMzAwAAAAAiMzMDAAAAACIzMwMAAAAAIjMzAwAAAAAiMzMDAAAAACAzMz8AAAAAADMzAwAAAAAAMzMDAAAAAAAzMwAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Bomber plane"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
