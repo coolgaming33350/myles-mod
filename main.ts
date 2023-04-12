@@ -2,7 +2,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(assets.image`Tank Bullet`, mySprite, 50, 0)
 })
 statusbars.onZero(StatusBarKind.Health, function (status) {
-    mySprite.setPosition(0, 0)
+    mySprite.setPosition(5, 3)
     statusbar.value = 100
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
@@ -22,3 +22,6 @@ controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
 statusbar = statusbars.create(20, 4, StatusBarKind.Health)
 statusbar.attachToSprite(mySprite)
+game.onUpdateInterval(2000, function () {
+    statusbar.value += 5
+})
