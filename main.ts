@@ -22,13 +22,22 @@ info.onLifeZero(function () {
     sprites.destroy(mySprite, effects.fire, 5000)
     mySprite = sprites.create(assets.image`Tank`, SpriteKind.Player)
 })
+mp.onControllerEvent(ControllerEvent.Connected, function (player2) {
+    mp.setPlayerSprite(mp.playerSelector(mp.PlayerNumber.One), sprites.create(assets.image`Tank`, SpriteKind.Player))
+    mp.setPlayerSprite(mp.playerSelector(mp.PlayerNumber.Two), sprites.create(assets.image`Tank`, SpriteKind.Player))
+    mp.setPlayerSprite(mp.playerSelector(mp.PlayerNumber.Three), sprites.create(assets.image`Tank`, SpriteKind.Player))
+    mp.setPlayerSprite(mp.playerSelector(mp.PlayerNumber.Four), sprites.create(assets.image`Tank`, SpriteKind.Player))
+    mp.setPlayerIndicatorsVisible(true)
+    mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.One))
+    mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.Two))
+    mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.Three))
+    mp.moveWithButtons(mp.playerSelector(mp.PlayerNumber.Four))
+})
 let projectile: Sprite = null
 let statusbar: StatusBarSprite = null
 let mySprite: Sprite = null
 let tilemap2 = 0
-mySprite = sprites.create(assets.image`Tank`, SpriteKind.Player)
 tiles.setCurrentTilemap(tilemap`level1`)
-controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
 statusbar = statusbars.create(20, 4, StatusBarKind.Health)
 statusbar.attachToSprite(mySprite)
