@@ -8,7 +8,7 @@ This is the thing for the Mutiplayer
 | ------- | ------------------ |
 | 3x      | :white_check_mark: |
 | 2x      | ✅                |
-| 1x      | :white_check_mark: |
+| 1x      | :x: |
 | < 4     | :x:                |
 
 ## Reporting a Vulnerability
