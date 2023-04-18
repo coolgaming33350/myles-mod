@@ -30,25 +30,6 @@ f f f f f f f f f f f f f f f f
 5 f f f f f 
 5 f f f f f 
 `;
-            case "image3":
-            case "Bomber plane":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-c . . . . . . . . . . . . . . . 
-c c . . . . . . . . . . . . . . 
-1 1 1 . . . . 8 8 8 8 8 . . . . 
-c c 1 c . . 8 8 8 8 8 8 8 . . . 
-1 1 1 c c c c c c c c c c c c c 
-c c 1 c c c c c c c c c c c c c 
-1 1 1 c c c c c c c c c c c c c 
-c c c c c c c c c c c c c c c c 
-. c c c c c c c c c c c c c c . 
-. . f . . . . . . . . . f . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`;
         }
         return null;
     })
